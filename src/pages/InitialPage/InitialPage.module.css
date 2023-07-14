@@ -1,0 +1,8 @@
+@import '../../styles/_variables.css';
+
+.header {
+    background-image: url('../../assets/images/bg-pattern-intro-mobile.svg');
+    background-position: 35% 35%;
+    background-repeat: no-repeat;
+    background-color: var(--light-red);
+}
