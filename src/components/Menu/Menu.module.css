@@ -48,10 +48,6 @@ ul {
     text-decoration: none;
   }
   
-  li a:hover, .dropdown:hover .dropdown__btn {
-    background-color: red;
-  }
-  
   li.dropdown {
     display: inline-block;
   }
@@ -72,14 +68,17 @@ ul {
     display: block;
     text-align: left;
   }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1;}
-  
-  .dropdown:hover .dropdown-content {
+
+   .dropdown__content-active{
     display: block;
   }
+  
 
   .btns {
     display: flex;
     flex-direction: column;
   }
+
+ input[type="checkbox"] {
+    opacity: 0;
+}
