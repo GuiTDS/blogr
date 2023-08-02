@@ -5,4 +5,48 @@
     background-position: 35% 35%;
     background-repeat: no-repeat;
     background-color: var(--light-red);
+    border-bottom-left-radius: 4rem;
+    font-family: var(--ubuntu-font);
+    padding: 55px 25px;
+    color: var(--white);
+    height: 55vh;
+}
+
+.header__info {
+  margin-top: 5.5rem;
+}
+
+.header__info h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    line-height: 3rem;
+}
+
+.header__info p {
+    margin: 1rem;
+    text-align: center;
+    font-size: 18px;
+    color: var(--grayish-blue);
+}
+
+.header__btns {
+    margin-top: 2.3rem;
+    text-align: center;
+}
+
+.header__btns button {
+    margin: 0 1rem;
+    background: none;
+    color: var(--white);
+    font-size: var(--body-text-size);
+    font-weight: 700;
+    border: 1px solid var(--white);
+    padding: 10px 20px;
+    border-radius: 2rem;
+}
+
+.header__btns button:first-child {
+    background-color: var(--white);
+    color: var(--light-red);
+    
 }

@@ -6,6 +6,15 @@ const InitialPage = () => {
         <>
             <div className={styles.header}>
                 <Menu />
+                <div className={styles.header__info}>
+                    <h2>A modern publishing platform</h2>    
+                    <p>Grow your audience and build your online brand</p>
+                </div>
+                <div className={styles.header__btns}>
+                    <button>Start for free</button>
+                    <button>Learn More</button>
+                </div>
+                
             </div>
 
         </>
