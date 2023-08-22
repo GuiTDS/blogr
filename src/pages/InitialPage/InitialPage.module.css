@@ -1,5 +1,6 @@
 @import '../../styles/_variables.css';
 
+
 .header {
     background-image: url('../../assets/images/bg-pattern-intro-mobile.svg');
     background-position: 35% 35%;
@@ -13,7 +14,7 @@
 }
 
 .header__info {
-  margin-top: 5.5rem;
+    margin-top: 5.5rem;
 }
 
 .header__info h2 {
@@ -48,5 +49,37 @@
 .header__btns button:first-child {
     background-color: var(--white);
     color: var(--light-red);
-    
+
+}
+
+main {
+    font-family: var(--overpass-font);
+}
+
+.main__svg {
+    margin: 3rem 0;
+}
+
+.card {
+    text-align: center;
+    line-height: 2rem;
+}
+
+.title {
+    margin: 5rem 0 0;
+    text-align: center;
+}
+
+.card__content h2,
+.title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.card__content {
+    margin: 0 1.5rem 2rem;
+}
+
+.card__content h2 {
+    margin-bottom: 1.5rem;
 }
