@@ -1,8 +1,10 @@
 import Menu from 'components/Menu';
 import styles from './InitialPage.module.css';
 import { ReactComponent as Graphic } from 'assets/images/illustration-editor-mobile.svg'
+import { ReactComponent as Phones } from 'assets/images/illustration-phones.svg'
 import classNames from 'classnames';
-
+import PhoneImg from 'assets/images/illustration-phones.svg';
+import Circles from 'assets/images/bg-pattern-circles.svg';
 const InitialPage = () => {
     return (
         <>
@@ -19,10 +21,10 @@ const InitialPage = () => {
             </div>
 
             <main>
-               
+
                 <h2 className={styles.title}>Designed for the future</h2>
-                
-                <Graphic width={410} className={styles.main__svg}/>
+
+                <Graphic width={410} className={styles.main__svg} />
 
                 <div className={classNames({
                     [styles.card__content]: true,
@@ -46,9 +48,35 @@ const InitialPage = () => {
                         by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
                     </p>
                 </div>
+
+
+                <div className={classNames({
+                    [styles[`content-background`]]: true,
+
+                })}>
+                    <img className={styles.circles} src={Circles} alt='fundo do card com conteúdo' />
+                    <div className={styles.phones}>
+                        <img src={PhoneImg} alt="Phone image" />
+                    </div>
+                    <div className={classNames({
+                        [styles[`content-background__info`]]: true,
+                    })}>
+                        <h2>State of the Art Infrastructure</h2>
+                        <p>
+                            With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+                            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+                        </p>
+                    </div>
+
+                </div>
+
+
+
+
+
+
             </main>
         </>
-
     );
 }
 

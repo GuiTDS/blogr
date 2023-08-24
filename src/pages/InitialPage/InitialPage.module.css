@@ -1,6 +1,8 @@
 @import '../../styles/_variables.css';
 
 
+
+
 .header {
     background-image: url('../../assets/images/bg-pattern-intro-mobile.svg');
     background-position: 35% 35%;
@@ -54,6 +56,8 @@
 
 main {
     font-family: var(--overpass-font);
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .main__svg {
@@ -81,5 +85,47 @@ main {
 }
 
 .card__content h2 {
+    margin-bottom: 1.5rem;
+}
+
+.content-background {
+    height: 75vh;
+    margin-top: 16rem;
+    position: relative;
+    background-color: var(--very-dark-desaturated-blue);
+    border-bottom-left-radius: 6rem;
+    border-top-right-radius: 5rem;
+
+}
+
+.circles {
+    width: 650px;
+    height: 75vh;
+    object-position:-8rem -13.5rem;
+}
+
+.phones {
+    position: absolute;
+    top: -180px;
+}
+
+.phones img {
+    height: 400px;
+    width: 400px;
+}
+
+.content-background__info {
+    position: absolute;
+    bottom: 10%;
+    color: var(--white);
+    text-align: center;
+    line-height: 2rem;
+    padding: 0 2.5rem;
+}
+
+.content-background__info h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 2.5rem;
     margin-bottom: 1.5rem;
 }
