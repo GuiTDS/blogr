@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import PhoneImg from 'assets/images/illustration-phones.svg';
 import Circles from 'assets/images/bg-pattern-circles.svg';
 import LaptopImg from 'assets/images/illustration-laptop-mobile.svg';
+import { ReactComponent as Logo } from 'assets/images/logo.svg';
 
 const InitialPage = () => {
     return (
@@ -96,8 +97,29 @@ const InitialPage = () => {
 
             </main>
 
-            <footer>
+            <footer className={styles.footer}>
+                <div>
+                    <Logo className={styles.footer__logo}/>   
+                    <ul className={styles.footer__list}>
+                        <a>Product</a>
+                        <li>Overview</li>
+                        <li>Pricing</li>
+                        <li>Marketplace</li>
+                        <li>Features</li>
+                        <li>Integrations</li>
+                        <a>Company</a>
+                        <li>About</li>
+                        <li>Team</li>
+                        <li>Blog</li>
+                        <li>Careers</li>
+                        <a>Connect</a>
+                        <li>Contact</li>
+                        <li>Newsletter</li>
+                        <li>LinkedIn</li>
+                    </ul> 
+                </div>
                 
+
             </footer>
         </>
     );
