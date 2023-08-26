@@ -1,10 +1,11 @@
 import Menu from 'components/Menu';
 import styles from './InitialPage.module.css';
 import { ReactComponent as Graphic } from 'assets/images/illustration-editor-mobile.svg'
-import { ReactComponent as Phones } from 'assets/images/illustration-phones.svg'
 import classNames from 'classnames';
 import PhoneImg from 'assets/images/illustration-phones.svg';
 import Circles from 'assets/images/bg-pattern-circles.svg';
+import LaptopImg from 'assets/images/illustration-laptop-mobile.svg';
+
 const InitialPage = () => {
     return (
         <>
@@ -70,12 +71,34 @@ const InitialPage = () => {
 
                 </div>
 
+                <img src={LaptopImg} alt='Laptop image' className={styles.laptop__img} />
 
+                <div className={classNames({
+                    [styles.card__content]: true,
+                    [styles.card]: true,
+                })}>
+                    <h2>Free, open, simple</h2>
+                    <p> Blogr is a free and open source application backed by a large community of helpful developers. It supports
+                        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+                        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+                    </p>
+                </div>
 
-
-
+                <div className={classNames({
+                    [styles.card__content]: true,
+                    [styles.card]: true,
+                })}>
+                    <h2>Powerful tooling</h2>
+                    <p> Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+                        capable of producing even the most complicated sites.
+                    </p>
+                </div>
 
             </main>
+
+            <footer>
+                
+            </footer>
         </>
     );
 }
