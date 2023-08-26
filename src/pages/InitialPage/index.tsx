@@ -98,27 +98,35 @@ const InitialPage = () => {
             </main>
 
             <footer className={styles.footer}>
-                <div>
-                    <Logo className={styles.footer__logo}/>   
-                    <ul className={styles.footer__list}>
-                        <a>Product</a>
-                        <li>Overview</li>
-                        <li>Pricing</li>
-                        <li>Marketplace</li>
-                        <li>Features</li>
-                        <li>Integrations</li>
-                        <a>Company</a>
-                        <li>About</li>
-                        <li>Team</li>
-                        <li>Blog</li>
-                        <li>Careers</li>
-                        <a>Connect</a>
-                        <li>Contact</li>
-                        <li>Newsletter</li>
-                        <li>LinkedIn</li>
-                    </ul> 
+                <div className={styles.footer__container}>
+                    
+                    <div className={styles.container__lists}>
+                    <Logo className={styles.footer__logo} />
+                        <ul className={styles.footer__list}>
+                            <a>Product</a>
+                            <li>Overview</li>
+                            <li>Pricing</li>
+                            <li>Marketplace</li>
+                            <li>Features</li>
+                            <li>Integrations</li>
+                        </ul>
+                        <ul className={styles.footer__list}>
+                            <a>Company</a>
+                            <li>About</li>
+                            <li>Team</li>
+                            <li>Blog</li>
+                            <li>Careers</li>
+                        </ul>
+                        <ul className={styles.footer__list}>
+                            <a>Connect</a>
+                            <li>Contact</li>
+                            <li>Newsletter</li>
+                            <li>LinkedIn</li>
+                        </ul>
+                    </div>
+
                 </div>
-                
+
 
             </footer>
         </>

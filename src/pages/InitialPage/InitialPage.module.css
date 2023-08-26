@@ -101,7 +101,7 @@ main {
 .circles {
     width: 650px;
     height: 75vh;
-    object-position:-8rem -13.5rem;
+    object-position: -8rem -13.5rem;
 }
 
 .phones {
@@ -163,4 +163,29 @@ main {
 .footer__list li {
     color: var(--grayish-blue);
     margin-top: 1rem;
+}
+
+
+@media screen and (min-width: 1440px) {
+
+
+    /* footer */
+    .container__lists {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+    .footer__logo {
+        margin-left: 10rem;
+    }
+
+    .footer__list {
+        margin-left: 2rem;
+    }
+
+    .footer__list a {
+        margin-top: 4.5rem;
+    }
+
+    
 }
