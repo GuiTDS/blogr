@@ -64,6 +64,10 @@ main {
     margin: 3rem 0;
 }
 
+.svg__desktop {
+    display: none;
+}
+
 .card {
     text-align: center;
     line-height: 2rem;
@@ -137,6 +141,10 @@ main {
     right: 12%;
 }
 
+.laptop__desktop {
+    display: none;
+}
+
 .footer {
     background-color: var(--very-dark-black-blue);
     padding-bottom: 4rem;
@@ -168,13 +176,119 @@ main {
 
 @media screen and (min-width: 1440px) {
 
+    button {
+        cursor: pointer;
+    }
+
+    .header {
+        background-image: url('../../assets/images/bg-pattern-intro-desktop.svg');
+        background-position: 19%;
+        background-repeat: no-repeat;
+    }
+
+    .header__info h2 {
+        font-size: 3rem;
+    }
+
+    /* main */
+    .title {
+        margin-bottom: 5rem;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 350px 350px;
+    }
+
+    .main__svg {
+        grid-column: 2;
+    }
+
+    .wrapper .card__content {
+        text-align: left;
+        grid-column: 1;
+        width: 500px;
+        margin-left: 15rem;
+    }
+
+    .wrapper .card__content {
+        grid-row: 1;
+    }
+
+    .wrapper .card__content:last-child {
+        grid-row: 2;
+    }
+
+    .main__svg {
+        display: none;
+    }
+
+    .svg__desktop {
+        display: block;
+        position: relative;
+        left: 100px;
+    }
+
+    .content-background {
+        height: 40vh;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin-bottom: 7rem;
+    }
+
+    .content-background__info {
+        grid-column: 2;
+        margin-bottom: 2rem;
+        right: 159px;
+        text-align: left;
+    }
+
+    .phones {
+        top: -45px;
+        left: 13rem;
+    }
+
+    .circles {
+        object-position: -8rem -17rem;
+    }
+
+    .laptop__img {
+        display: none;
+    }
+
+    .laptop__desktop {
+        display: block;
+    }
+
+    .wrapper:last-child {
+        grid-template-columns: 786px 1fr;
+        grid-template-rows: 160px 290px 350px;
+        margin-bottom: 12rem;
+    }
+    .wrapper:last-child .laptop__desktop {
+        grid-column: 1;
+        position: relative;
+        right: 275px;
+    }
+
+    .wrapper:last-child .card__content {
+        grid-column: 2;
+        margin-left: 0;
+        margin-right: 5rem;
+        grid-row: 2;
+    }
+
+    .wrapper:last-child .card__content:last-child {
+        grid-row: 3;
+    }
 
     /* footer */
     .container__lists {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
-    
+
     .footer__logo {
         margin-left: 10rem;
     }
@@ -183,9 +297,13 @@ main {
         margin-left: 2rem;
     }
 
+    .footer__list li {
+        cursor: pointer;
+    }
+
     .footer__list a {
         margin-top: 4.5rem;
     }
 
-    
+
 }

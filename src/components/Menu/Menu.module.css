@@ -110,7 +110,7 @@ li.dropdown {
 
 .btns {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -133,4 +133,92 @@ li.dropdown {
 
 input[type="checkbox"] {
   display: none;
+}
+
+@media screen and (min-width: 1440px) {
+
+  .logo {
+    margin-left: 5.5rem;
+  }
+  .menu__icons {
+    display: none;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .menu__content-desktop {
+    display: block;
+  }
+
+  .dropdown__content {
+    position: relative;
+    border-radius: 10px;
+  }
+
+  .dropdown__content a:hover {
+    font-weight: 700;
+  }
+  .dropdown label{
+    color: var(--white);
+    cursor: pointer;
+  }
+
+  .dropdown label:hover {
+    color: var(--white);
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .menu__content {
+    background: none;
+    box-shadow: none;
+  }
+
+  .menu__content ul {
+    display: block;
+    width: max-content;
+    position: relative;
+    left: 10%;
+    bottom: 4rem;
+  }
+
+  .menu__content ul li {
+    float: left;
+    width: 140px;
+    
+  }
+
+  .menu__content ul li:first-child {
+    margin-left: 3rem;
+  }
+
+  .btns {
+    position: absolute;
+    left: 90%;
+    height: 100vh;
+    bottom: 5.5rem;
+  }
+
+  .btns button {
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--light-red);
+  }
+
+  .btns button:last-child:hover {
+    color: var(--white);
+    background-color: var(--very-light-red);
+  }
+
+  .btns button:first-child {
+    color: var(--grayish-blue);
+  }
+
+ 
+
+  
 }
