@@ -28,8 +28,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
 
+![Desktop](https://github.com/GuiTDS/blogr/assets/92134700/acc9f659-145b-489e-b358-2f8359022f0a)
+
+|![Mobile](https://github.com/GuiTDS/blogr/assets/92134700/0d471592-20e3-44e9-9b8f-d15a33dce613)|![Mobile](https://github.com/GuiTDS/blogr/assets/92134700/c5a0b332-a305-4060-a1cd-8559a5b80726)|
 
 
 ### Links
